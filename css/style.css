@@ -14,6 +14,10 @@
 */
 
 /* inicio del header del index */
+.navbar-brand:hover{
+    animation:flip;
+    animation-duration: 1s;
+}
 header{
     position: fixed;
     width: 100%;
@@ -61,6 +65,11 @@ nav{
     font-size: 15px;
 }
 
+.nav-link:hover{
+    animation: pulse;
+    animation-duration: 1s;
+}
+
 /* main home */
 
 .section-home{
@@ -77,20 +86,22 @@ nav{
 /* main about me */
 
 .main-aboutme{
-    padding: 150px;
+    padding: 150px 0;
 }
 
 .titulo-aboutme{
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
     gap: 100px;
 }
 
 .texto-aboutme{
-    padding: 50px 200px;
+    padding: 50px 150px;
 }
 .texto-aboutme p{
+    text-align: center;
     font-size: 50px;
 }
 
@@ -105,6 +116,7 @@ nav{
     align-content: center;
     justify-items: center;
     align-items: center;
+    margin-bottom: 35px;
     grid-template-areas: 
     "div3 div3 div7 div7"
     "div4 div1 div2 div8"
@@ -512,12 +524,21 @@ footer{
     margin-bottom: 0;
 }
 
+.footer-icons a:hover{
+    animation: fadeIn;
+    animation-duration: 1.5s;
+}
+
 .footer-copy{
     width: 100%;
     background-color: #3d454d;
     padding: 20px;
     margin-bottom: 0;
     text-align: center;
+}
+
+.footer-copy p{
+    color: white;
 }
 
 /* media queries de index */
@@ -700,19 +721,19 @@ footer{
         background-position: center;
         margin-bottom: 0;
         grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: repeat(7, 1fr);
+        grid-template-rows: repeat(7, 14.28%);
         grid-template-areas: 
         "div3 div3"
         "div7 div7"
         "div1 div2"
-        "div4 div4"
-        "div5 div8"
-        "div5 div8"
+        "div5 div5"
+        "div4 div8"
+        "div4 div8"
         "div6 div6"
         ;
     }
     .texto-aboutme{
-        padding: 50px 50px;
+        padding: 50px 100px;
     }
     .texto-aboutme p{
         font-size: 40px;
@@ -731,7 +752,9 @@ footer{
         height: 300px;
     }
     .texto-aboutme{
-        padding: 35px 35px;
+        padding: 35px 85px;
+    }.div-2 {
+        font-size: 1.3rem;
     }
 }
 
@@ -739,16 +762,17 @@ footer{
     .grid-container{
         width: 100%;
         background-position: center;
-        margin-bottom: 0;
+        margin-bottom: 90px;
         grid-template-columns: repeat(1, 1fr);
-        grid-template-rows: repeat(10, 1fr);
+        grid-template-rows: repeat(11, 10%);
         grid-template-areas: 
         "div3"
         "div7"
         "div1"
         "div2"
+        "div2"
         "div4"
-        "div5"
+        "div4"
         "div5"
         "div8"
         "div8"
@@ -759,7 +783,7 @@ footer{
         font-size: 15px;
     }
     .main-aboutme{
-        padding: 120px;
+        padding: 120px 60;
     }
     .titulo-aboutme h1{
         font-size: 45px;
@@ -794,7 +818,7 @@ footer{
         height: 150px;
     }
     .texto-aboutme{
-        padding: 5px 0px;
+        padding: 5px 25px;
     }
     .texto-aboutme p{
         font-size: 20px;
