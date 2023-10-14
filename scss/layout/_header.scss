@@ -1,0 +1,40 @@
+header{
+    position: fixed;
+    width: 100%;
+    padding: 0px 1.5rem;
+    z-index: 20;
+    .navbar{
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        list-style: none;
+        align-items: center;
+        gap: 1.25rem;
+        .logo{
+            background-repeat: no-repeat;
+            margin: .3125rem;
+            margin-top: .625rem;
+        }
+        .navbar-brand:hover{
+            animation:flip;
+            animation-duration: 1s;
+        }
+        .nav-link{
+            text-decoration: none;
+            color: rgb(217, 217, 217);
+            font-family: Montserrat;
+            font-weight: 500;
+            font-size: 15px;
+        }
+        .nav-link:hover{
+            animation: pulse;
+            animation-duration: 1s;
+        }
+        .dropdown-menu{
+            background-color: transparent;
+            .dropdown-item{
+                color: white;
+            }
+        }
+    }
+}

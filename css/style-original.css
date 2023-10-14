@@ -38,16 +38,12 @@ header{
     object-fit: cover;
 }
 
-nav{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
 .navbar{
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
     list-style: none;
+    align-items: center;
     gap: 1.25rem;
 }
 
