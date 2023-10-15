@@ -1,0 +1,22 @@
+.main-rimac{
+    width: 100%;
+    height: 700px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    background-color: #9BABB8;
+    h1{
+        color: #3d454d;
+        font-family: Montserrat;
+        font-size: 75px;
+    }
+}
+.fotos-rimac img{
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    justify-content: center;
+    align-items: center;
+}

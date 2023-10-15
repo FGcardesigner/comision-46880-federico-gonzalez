@@ -1,6 +1,42 @@
+/* reset */
 @import "../scss/base/reset";
+/* layout header */
 @import "../scss/layout/header";
-@import "../scss/layout/-main-index.scss";
+/* main index */
+@import "../scss/layout/-main-index";
+/* main aboutme */
 @import "../scss/layout/main-aboutme";
+/* main mercedes */
 @import "../scss/layout/main-mercedes";
+/* main rimac */
+@import "../scss/layout/main-rimac";
+/* main node */
+@import "../scss/layout/main-node";
+/* main minimal */
+@import "../scss/layout/main-minimal";
+/* main outreal */
+@import "../scss/layout/main-outreal";
+/* main escandinavian */
+@import "../scss/layout/main.escandinavian";
+/* main contact */
+@import "../scss/layout/main-contact";
+/* main footer */
 @import "../scss/layout/footer";
+/* media index */
+@import "../scss/layout/media/media-index";
+/* media aboutme */
+@import "../scss/layout/media/media-aboutme";
+/* media mercedes */
+@import "../scss/layout/media/media-mercedes";
+/* media rimac */
+@import "../scss/layout/media/media-rimac";
+/* media node */
+@import "../scss/layout/media/media-node";
+/* media outreal */
+@import "../scss/layout/media/media-outreal";
+/* media minimal */
+@import "../scss/layout/media/media-minimal";
+/* media escandinavian */
+@import "../scss/layout/media/media-escandinavian";
+/* media contact */
+@import "../scss/layout/media/media-contact";

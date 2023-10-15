@@ -1,0 +1,39 @@
+.main-contactos{
+    width: 100%;
+    height: 80vh; 
+    padding-top: 200px;   
+    background-color: #9BABB8;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    .titulo-contacto{
+        color: #d6d6d6;
+    }
+    #form-div{
+        padding: 10px 20px;
+        width: 600px;
+        height: 600px;
+        .formulario-contact{
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            height: 100%;
+            .input-group{
+                display: flex;
+                flex-direction: column;
+                gap: 10px;
+            }
+            .input-group input,
+            .input-group textarea{
+                font-size: 15px;
+                color: #3d454d;
+                border-style: none;
+                padding: 10px 20px;
+                background-color: #d6d6d6;
+                text-transform: uppercase;
+            }
+        }
+    }
+}
