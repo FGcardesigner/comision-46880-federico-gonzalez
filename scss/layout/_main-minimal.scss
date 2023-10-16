@@ -2,16 +2,14 @@
     width: 100%;
     height: 700px;
     display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    background-color: #9BABB8;
+    @include flex(row,none,center,center,none);
+    background-color: $bg-principal;
     h1{
-        color: #3d454d;
+        color: $color-principal;
         font-family: Montserrat;
         top: 35%;
         left: 32%;
-        font-size: 75px;
+        font-size: map-get($font-size, uuul);
     }
 }
 .fotos-minimal img{

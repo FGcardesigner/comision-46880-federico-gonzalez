@@ -1,11 +1,11 @@
 @media (max-width: 768px){
     .main-minimal h1{
-        font-size: 60px;
+        font-size: map-get($font-size, uul);
     }
 }
 @media (max-width: 530px){
     .main-minimal h1{
-        font-size: 55px;
+        font-size: map-get($font-size, ul);
         text-align: center;
     }
 }

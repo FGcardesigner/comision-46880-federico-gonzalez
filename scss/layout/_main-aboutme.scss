@@ -1,13 +1,13 @@
 .main-aboutme{
     padding: 150px 0;
     width: 100%;
-    background-color: #9BABB8;
+    background-color: $bg-principal;
     h1{
         text-align: start;
-        color: #3d454d;
+        color: $color-principal;
         top: 30%;
         left: 20%;
-        font-size: 5rem;
+        font-size: map-get($font-size, uuul);
         font-family: Montserrat;
     }
     .titulo-aboutme{
@@ -21,21 +21,18 @@
         padding: 50px 150px;
         p{
             text-align: center;
-            font-size: 50px;
+            font-size: map-get($font-size, xxxl);
         }
     }
 }
 .grid-container{
     display: grid;
-    background-color: #3d454d;
+    background-color: $color-principal;
     width: 100%;
-    grid-template-columns: 25% 25% 25% 25%;
-    grid-template-rows: 30% 35% 35%;
-    justify-content: center;
-    align-content: center;
+    @include grid(25% 25% 25% 25%, 30% 35% 35%, center, center);
     justify-items: center;
     align-items: center;
-    margin-bottom: 35px;
+    margin-bottom: 0px;
     grid-template-areas: 
     "div3 div3 div7 div7"
     "div4 div1 div2 div8"
@@ -45,18 +42,18 @@
         grid-area: div1;
         align-self: center;
         margin: 90px;
-        font-size: 3.5rem;
-        color: white;
+        font-size: map-get($font-size, ul);
+        color: $color-terciario;
         font-family: Montserrat;
         font-weight: 500;
     }
+    /* extends */
+    
     .div-2 {
+        @extend .div-1;
         grid-area: div2;
-        align-self: center;
         margin: 50px;
-        font-size: 1.6rem;
-        color: aliceblue;
-        font-family: Montserrat;
+        font-size: map-get($font-size, md);
         font-weight: 300;
     }
     .div-3 {
@@ -65,7 +62,7 @@
         width: 100%;
         height: 100%;
     }
-    .div-3 img{
+    .img-grids{
         width: 100%;
         height: 100%;
         object-fit: cover;
@@ -76,54 +73,21 @@
         width: 100%;
         height: 100%;
     }
-    .div-4 img{
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-    }
     .div-5 {
+        @extend .div-4;
         grid-area: div5;
-        align-self: center;
-        width: 100%;
-        height: 100%;
-    }
-    .div-5 img{
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
     }
     .div-6 {
+        @extend .div-4;
         grid-area: div6;
-        align-self: center;
-        width: 100%;
-        height: 100%;
-    }
-    .div-6 img{
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
     }
     .div-7 {
+        @extend .div-4;
         grid-area: div7;
-        align-self: center;
-        width: 100%;
-        height: 100%;
-    }
-    .div-7 img{
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
     }
     .div-8 {
+        @extend .div-4;
         grid-area: div8;
-        align-self: center;
-        width: 100%;
-        height: 100%;
-    }
-    .div-8 img{
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
     }
     .section div3{
         width: 100%;

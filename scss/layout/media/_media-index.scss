@@ -6,7 +6,7 @@
     }
     .navbar li a{
         color: rgb(217, 217, 217);
-        font-size: 12px;
+        font-size: map-get($font-size, xxxs);
     }
 }
 
@@ -18,7 +18,7 @@
     }
     .navbar li a{
         color: rgb(217, 217, 217);
-        font-size: 12px;
+        font-size: map-get($font-size, xxxs);
     }
 }
 
@@ -30,19 +30,19 @@
     }
     .navbar li a{
         color: rgb(217, 217, 217);
-        font-size: 12px;
+        font-size: map-get($font-size, xxxs);
     }
     .footer-left{
         text-align: center;
     }
     .footer-left h1{
-        font-size: 27px;
+        font-size: map-get($font-size, l);
     }
     .footer-left h2{
-        font-size: 25px;
+        font-size: map-get($font-size, md);
     }
     .footer-left h3{
-        font-size: 23px;
+        font-size: map-get($font-size, m);
     }
     .footer-left img{
         width: 200px;
@@ -63,13 +63,13 @@
         text-align: center;
     }
     .footer-left h1{
-        font-size: 23px;
+        font-size: map-get($font-size, m);
     }
     .footer-left h2{
-        font-size: 21px;
+        font-size: map-get($font-size, sm);
     }
     .footer-left h3{
-        font-size: 19px;
+        font-size: map-get($font-size, xs);
     }
     .footer-left img{
         width: 150px;
@@ -91,13 +91,13 @@
         text-align: center;
     }
     .footer-left h1{
-        font-size: 23px;
+        font-size: map-get($font-size, m);
     }
     .footer-left h2{
-        font-size: 21px;
+        font-size: map-get($font-size, sm)px;
     }
     .footer-left h3{
-        font-size: 19px;
+        font-size: map-get($font-size, xs);
     }
     .footer-left img{
         width: 150px;
@@ -121,13 +121,13 @@
         text-align: center;
     }
     .footer-left h1{
-        font-size: 23px;
+        font-size: map-get($font-size, m);
     }
     .footer-left h2{
-        font-size: 21px;
+        font-size: map-get($font-size, sm);
     }
     .footer-left h3{
-        font-size: 19px;
+        font-size: map-get($font-size, xs);
     }
     .footer-left img{
         width: 150px;

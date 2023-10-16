@@ -1,17 +1,17 @@
 @media (max-width: 1024px){
     .main-mercedes h1{
-        font-size: 60px;
+        font-size: map-get($font-size, uul);
     }
 }
 @media (max-width: 650px){
     .main-mercedes h1{
-        font-size: 50px;
+        font-size: map-get($font-size, xxxl);
         text-align: center;
     }
 }
 @media (max-width: 375px){
     .main-mercedes h1{
-        font-size: 40px;
+        font-size: map-get($font-size, xl);
         text-align: center;
     }
 }

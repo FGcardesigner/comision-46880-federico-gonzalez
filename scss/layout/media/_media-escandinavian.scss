@@ -1,14 +1,14 @@
 @media (max-width: 1024px){
     .main-escandinavian{
         h1{
-            font-size: 60px;
+            font-size: map-get($font-size, uul);
         }
     }
 }
 @media (max-width: 768px){
     .main-escandinavian{
         h1{
-            font-size: 50px;
+            font-size: map-get($font-size, xxxl);
             text-align: center;
         }
     } 
@@ -16,7 +16,7 @@
 @media (max-width: 500px){
     .main-escandinavian{
         h1{
-            font-size: 40px;
+            font-size: map-get($font-size, xl);
             text-align: center;
         }
     }
@@ -24,7 +24,7 @@
 @media (max-width: 378px){
     .main-escandinavian{
         h1{
-            font-size: 25px;
+            font-size: map-get($font-size, md);
             text-align: center;
         }
     }

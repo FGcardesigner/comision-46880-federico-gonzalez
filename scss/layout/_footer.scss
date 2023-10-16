@@ -9,9 +9,7 @@ footer{
     }
     .footer-icons{
         display: flex;
-        flex-direction: row;
-        justify-content: center;
-        align-items: center;
+        @include flex(row,none,center,center,none);
         padding-bottom: 10px;
         a{
             list-style: none;

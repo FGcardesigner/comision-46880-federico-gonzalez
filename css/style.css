@@ -1,3 +1,8 @@
+/* typo */
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;500&display=swap");
+/* variables */
+/* maps */
+/* mixins */
 /* reset */
 * {
   margin: 0;
@@ -14,10 +19,13 @@ header {
 }
 header .navbar {
   display: flex;
+  display: flex;
   flex-direction: row;
+  flex-wrap: none;
   justify-content: flex-end;
-  list-style: none;
   align-items: center;
+  gap: none;
+  list-style: none;
   gap: 1.25rem;
 }
 header .navbar .logo {
@@ -64,7 +72,7 @@ header .navbar .dropdown-menu .dropdown-item {
   color: #3d454d;
   top: 30%;
   left: 20%;
-  font-size: 5rem;
+  font-size: 75;
   font-family: Montserrat;
 }
 .main-aboutme .titulo-aboutme {
@@ -86,31 +94,30 @@ header .navbar .dropdown-menu .dropdown-item {
   display: grid;
   background-color: #3d454d;
   width: 100%;
+  display: grid;
   grid-template-columns: 25% 25% 25% 25%;
   grid-template-rows: 30% 35% 35%;
   justify-content: center;
   align-content: center;
   justify-items: center;
   align-items: center;
-  margin-bottom: 35px;
+  margin-bottom: 0px;
   grid-template-areas: "div3 div3 div7 div7" "div4 div1 div2 div8" "div5 div5 div6 div6";
+  /* extends */
 }
-.grid-container .div-1 {
+.grid-container .div-1, .grid-container .div-2 {
   grid-area: div1;
   align-self: center;
   margin: 90px;
-  font-size: 3.5rem;
+  font-size: 55px;
   color: white;
   font-family: Montserrat;
   font-weight: 500;
 }
 .grid-container .div-2 {
   grid-area: div2;
-  align-self: center;
   margin: 50px;
-  font-size: 1.6rem;
-  color: aliceblue;
-  font-family: Montserrat;
+  font-size: 25px;
   font-weight: 300;
 }
 .grid-container .div-3 {
@@ -119,65 +126,28 @@ header .navbar .dropdown-menu .dropdown-item {
   width: 100%;
   height: 100%;
 }
-.grid-container .div-3 img {
+.grid-container .img-grids {
   width: 100%;
   height: 100%;
   object-fit: cover;
 }
-.grid-container .div-4 {
+.grid-container .div-4, .grid-container .div-8, .grid-container .div-7, .grid-container .div-6, .grid-container .div-5 {
   grid-area: div4;
   align-self: center;
   width: 100%;
   height: 100%;
 }
-.grid-container .div-4 img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
 .grid-container .div-5 {
   grid-area: div5;
-  align-self: center;
-  width: 100%;
-  height: 100%;
-}
-.grid-container .div-5 img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
 }
 .grid-container .div-6 {
   grid-area: div6;
-  align-self: center;
-  width: 100%;
-  height: 100%;
-}
-.grid-container .div-6 img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
 }
 .grid-container .div-7 {
   grid-area: div7;
-  align-self: center;
-  width: 100%;
-  height: 100%;
-}
-.grid-container .div-7 img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
 }
 .grid-container .div-8 {
   grid-area: div8;
-  align-self: center;
-  width: 100%;
-  height: 100%;
-}
-.grid-container .div-8 img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
 }
 .grid-container .section div3 {
   width: 100%;
@@ -188,15 +158,18 @@ header .navbar .dropdown-menu .dropdown-item {
   width: 100%;
   height: 700px;
   display: flex;
+  display: flex;
   flex-direction: row;
+  flex-wrap: none;
   justify-content: center;
   align-items: center;
+  gap: none;
   background-color: #9BABB8;
 }
 .main-mercedes h1 {
   color: #3d454d;
   font-family: Montserrat;
-  font-size: 75px;
+  font-size: 75;
 }
 
 .fotos-mercedes img {
@@ -213,15 +186,18 @@ header .navbar .dropdown-menu .dropdown-item {
   width: 100%;
   height: 700px;
   display: flex;
+  display: flex;
   flex-direction: row;
-  align-items: center;
+  flex-wrap: none;
   justify-content: center;
+  align-items: center;
+  gap: none;
   background-color: #9BABB8;
 }
 .main-rimac h1 {
   color: #3d454d;
   font-family: Montserrat;
-  font-size: 75px;
+  font-size: 75;
 }
 
 .fotos-rimac img {
@@ -238,9 +214,12 @@ header .navbar .dropdown-menu .dropdown-item {
   width: 100%;
   height: 700px;
   display: flex;
+  display: flex;
   flex-direction: row;
-  align-items: center;
+  flex-wrap: none;
   justify-content: center;
+  align-items: center;
+  gap: none;
   background-color: #9BABB8;
 }
 .main-node h1 {
@@ -248,7 +227,7 @@ header .navbar .dropdown-menu .dropdown-item {
   font-family: Montserrat;
   top: 35%;
   left: 32%;
-  font-size: 75px;
+  font-size: 75;
 }
 
 .fotos-node img {
@@ -265,9 +244,12 @@ header .navbar .dropdown-menu .dropdown-item {
   width: 100%;
   height: 700px;
   display: flex;
+  display: flex;
   flex-direction: row;
-  align-items: center;
+  flex-wrap: none;
   justify-content: center;
+  align-items: center;
+  gap: none;
   background-color: #9BABB8;
 }
 .main-minimal h1 {
@@ -275,7 +257,7 @@ header .navbar .dropdown-menu .dropdown-item {
   font-family: Montserrat;
   top: 35%;
   left: 32%;
-  font-size: 75px;
+  font-size: 75;
 }
 
 .fotos-minimal img {
@@ -292,9 +274,12 @@ header .navbar .dropdown-menu .dropdown-item {
   width: 100%;
   height: 700px;
   display: flex;
+  display: flex;
   flex-direction: row;
-  align-items: center;
+  flex-wrap: none;
   justify-content: center;
+  align-items: center;
+  gap: none;
   background-color: #9BABB8;
 }
 .main-outreal h1 {
@@ -302,7 +287,7 @@ header .navbar .dropdown-menu .dropdown-item {
   font-family: Montserrat;
   top: 35%;
   left: 32%;
-  font-size: 75px;
+  font-size: 75;
 }
 
 .fotos-outreal img {
@@ -319,15 +304,18 @@ header .navbar .dropdown-menu .dropdown-item {
   width: 100%;
   height: 700px;
   display: flex;
+  display: flex;
   flex-direction: row;
+  flex-wrap: none;
   justify-content: center;
   align-items: center;
+  gap: none;
   background-color: #9BABB8;
 }
 .main-escandinavian h1 {
   color: #3d454d;
   font-family: Montserrat;
-  font-size: 75px;
+  font-size: 75;
 }
 
 .fotos-escandinavian img {
@@ -346,9 +334,12 @@ header .navbar .dropdown-menu .dropdown-item {
   padding-top: 200px;
   background-color: #9BABB8;
   display: flex;
+  display: flex;
   flex-direction: column;
+  flex-wrap: none;
   justify-content: center;
   align-items: center;
+  gap: none;
   gap: 15px;
 }
 .main-contactos .titulo-contacto {
@@ -393,9 +384,12 @@ footer .footer-left {
 }
 footer .footer-icons {
   display: flex;
+  display: flex;
   flex-direction: row;
+  flex-wrap: none;
   justify-content: center;
   align-items: center;
+  gap: none;
   padding-bottom: 10px;
 }
 footer .footer-icons a {
@@ -511,7 +505,7 @@ footer .footer-copy p {
     font-size: 23px;
   }
   .footer-left h2 {
-    font-size: 21px;
+    font-size: 21px px;
   }
   .footer-left h3 {
     font-size: 19px;
@@ -595,7 +589,7 @@ footer .footer-copy p {
     padding: 35px 85px;
   }
   .div-2 {
-    font-size: 1.3rem;
+    font-size: 21px;
   }
 }
 @media (max-width: 768px) {

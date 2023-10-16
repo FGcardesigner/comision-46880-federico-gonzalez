@@ -22,7 +22,7 @@
     }
     .main-aboutme{
         .texto-aboutme p{
-            font-size: 40px;
+            font-size: map-get($font-size, xl);
         }
     }
 }
@@ -35,7 +35,7 @@
     }
     .main-aboutme{
         .titulo-aboutme h1{
-            font-size: 50px;
+            font-size: map-get($font-size, xxxl);
         }
     }
     .main-aboutme{
@@ -49,7 +49,7 @@
             padding: 35px 85px;
     }
     }.div-2 {
-        font-size: 1.3rem;
+        font-size: map-get($font-size, sm);
     }
 }
 
@@ -76,7 +76,7 @@
     }
     .main-aboutme{
         .texto-aboutme p{
-            font-size: 20px;
+            font-size: map-get($font-size, s);
         }
     }
     .main-aboutme{
@@ -84,7 +84,7 @@
     }
     .main-aboutme{
         .titulo-aboutme h1{
-            font-size: 45px;
+            font-size: map-get($font-size, xxl);
         }
     }
     .main-aboutme{
@@ -108,7 +108,7 @@
     }
     .main-aboutme{
         .texto-aboutme p{
-            font-size: 25px;
+            font-size: map-get($font-size, md);
         }
     }
 }
@@ -121,7 +121,7 @@
     }
     .main-aboutme{
         .titulo-aboutme h1{
-            font-size: 40px;
+            font-size: map-get($font-size, xl);
         }
     }
     .main-about{
@@ -137,7 +137,7 @@
     }
     .main-aboutme{
         .texto-aboutme p{
-            font-size: 15px;
+            font-size: map-get($font-size, xxs);
         }
     }
 }

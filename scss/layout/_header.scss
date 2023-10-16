@@ -5,10 +5,8 @@ header{
     z-index: 20;
     .navbar{
         display: flex;
-        flex-direction: row;
-        justify-content: flex-end;
+        @include flex(row,none,flex-end,center,none);
         list-style: none;
-        align-items: center;
         gap: 1.25rem;
         .logo{
             background-repeat: no-repeat;
@@ -21,10 +19,10 @@ header{
         }
         .nav-link{
             text-decoration: none;
-            color: rgb(217, 217, 217);
+            color: $color-nav;
             font-family: Montserrat;
             font-weight: 500;
-            font-size: 15px;
+            font-size: map-get($font-size, xxs);
         }
         .nav-link:hover{
             animation: pulse;
@@ -33,7 +31,7 @@ header{
         .dropdown-menu{
             background-color: transparent;
             .dropdown-item{
-                color: white;
+                color: $color-terciario;
             }
         }
     }

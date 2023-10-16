@@ -2,14 +2,12 @@
     width: 100%;
     height: 80vh; 
     padding-top: 200px;   
-    background-color: #9BABB8;
+    background-color: $bg-principal;
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    @include flex(column,none,center,center,none);
     gap: 15px;
     .titulo-contacto{
-        color: #d6d6d6;
+        color: $color-secundario;
     }
     #form-div{
         padding: 10px 20px;
@@ -27,11 +25,11 @@
             }
             .input-group input,
             .input-group textarea{
-                font-size: 15px;
-                color: #3d454d;
+                font-size: map-get($font-size, xxs);
+                color: $color-principal;
                 border-style: none;
                 padding: 10px 20px;
-                background-color: #d6d6d6;
+                background-color: $color-secundario;
                 text-transform: uppercase;
             }
         }

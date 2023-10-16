@@ -1,6 +1,6 @@
 @media (max-width: 768px){
     .main-node h1{
-        font-size: 60px;
+        font-size: map-get($font-size, uul);
         text-align: center;
     }
 }

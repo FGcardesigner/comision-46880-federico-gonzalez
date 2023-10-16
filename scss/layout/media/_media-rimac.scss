@@ -1,6 +1,6 @@
 @media (max-width: 768px){
     .main-rimac h1{
-        font-size: 55px;
+        font-size: map-get($font-size, ul);
         text-align: center;
     }
 }
