@@ -8,6 +8,14 @@ header{
         @include flex(row,none,flex-end,center,none);
         list-style: none;
         gap: 1.25rem;
+        .container-fluid{
+            .navbar-collapse{
+                .navbar-nav{
+                    align-items: center;
+                }
+            }
+        }
+        }
         .logo{
             background-repeat: no-repeat;
             margin: .3125rem;
@@ -35,4 +43,4 @@ header{
             }
         }
     }
-}
+

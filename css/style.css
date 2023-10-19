@@ -28,30 +28,33 @@ header .navbar {
   list-style: none;
   gap: 1.25rem;
 }
-header .navbar .logo {
+header .navbar .container-fluid .navbar-collapse .navbar-nav {
+  align-items: center;
+}
+header .logo {
   background-repeat: no-repeat;
   margin: 0.3125rem;
   margin-top: 0.625rem;
 }
-header .navbar .navbar-brand:hover {
+header .navbar-brand:hover {
   animation: flip;
   animation-duration: 1s;
 }
-header .navbar .nav-link {
+header .nav-link {
   text-decoration: none;
   color: rgb(217, 217, 217);
   font-family: Montserrat;
   font-weight: 500;
   font-size: 15px;
 }
-header .navbar .nav-link:hover {
+header .nav-link:hover {
   animation: pulse;
   animation-duration: 1s;
 }
-header .navbar .dropdown-menu {
+header .dropdown-menu {
   background-color: transparent;
 }
-header .navbar .dropdown-menu .dropdown-item {
+header .dropdown-menu .dropdown-item {
   color: white;
 }
 
