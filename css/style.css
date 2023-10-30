@@ -57,6 +57,9 @@ header .dropdown-menu {
 header .dropdown-menu .dropdown-item {
   color: white;
 }
+header .dropdown-menu .dropdown-item:hover {
+  background-color: #3d454d;
+}
 
 /* main index */
 .carousel .carousel-item img {
@@ -582,7 +585,7 @@ footer .footer-copy p {
     gap: 25px;
   }
   .main-aboutme .titulo-aboutme h1 {
-    font-size: 50px;
+    font-size: 45px;
   }
   .main-aboutme .titulo-aboutme img {
     width: 300px;
@@ -594,8 +597,16 @@ footer .footer-copy p {
   .div-2 {
     font-size: 21px;
   }
+  .grid-container .div-2 p {
+    font-size: 21px;
+  }
 }
-@media (max-width: 768px) {
+@media (max-width: 890px) {
+  .grid-container .div-2 p {
+    font-size: 19px;
+  }
+}
+@media (max-width: 780px) {
   .grid-container {
     width: 100%;
     background-position: center;
@@ -646,6 +657,17 @@ footer .footer-copy p {
   }
   .main-aboutme .texto-aboutme p {
     font-size: 15px;
+  }
+  .grid-container .div-2 p {
+    font-size: 19px;
+  }
+}
+@media (max-width: 418px) {
+  .grid-container .div-2 p {
+    font-size: 15px;
+  }
+  .grid-container .div-1 h2, .grid-container .div-2 h2 {
+    font-size: 21px;
   }
 }
 /* media mercedes */

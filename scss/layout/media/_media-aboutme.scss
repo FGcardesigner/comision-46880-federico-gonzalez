@@ -35,7 +35,7 @@
     }
     .main-aboutme{
         .titulo-aboutme h1{
-            font-size: map-get($font-size, xxxl);
+            font-size: map-get($font-size, xxl);
         }
     }
     .main-aboutme{
@@ -51,9 +51,26 @@
     }.div-2 {
         font-size: map-get($font-size, sm);
     }
+    .grid-container{
+        .div-2{
+            p{
+                font-size: map-get($font-size, sm);
+            }
+        }
+    }
 }
 
-@media (max-width: 768px){
+@media (max-width: 890px){
+    .grid-container{
+        .div-2{
+            p{
+                font-size: map-get($font-size, xs);
+            }
+        }
+    }
+}
+
+@media (max-width: 780px){
     .grid-container{
         width: 100%;
         background-position: center;
@@ -140,4 +157,27 @@
             font-size: map-get($font-size, xxs);
         }
     }
+    .grid-container{
+        .div-2{
+            p{
+                font-size: map-get($font-size, xs);
+            }
+        }
+    }
 }
+
+@media (max-width: 418px){
+    .grid-container{
+        .div-2{
+            p{
+                font-size: map-get($font-size, xxs);
+            }
+        }
+        .div-1{
+            h2{
+                font-size: map-get($font-size, sm);
+            }
+        }
+    }
+}
+

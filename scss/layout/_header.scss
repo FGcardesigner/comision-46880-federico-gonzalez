@@ -31,7 +31,7 @@ header{
             font-family: Montserrat;
             font-weight: 500;
             font-size: map-get($font-size, xxs);
-        }
+            }
         .nav-link:hover{
             animation: pulse;
             animation-duration: 1s;
@@ -40,6 +40,9 @@ header{
             background-color: transparent;
             .dropdown-item{
                 color: $color-terciario;
+                &:hover{
+                    background-color: $color-principal;
+                }
             }
         }
     }
